@@ -1,0 +1,462 @@
+/* General */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 600 !important;
+}
+
+p {
+    font-size: 16px;
+}
+
+.nav {
+    width: 100%;
+    background-image: linear-gradient(75deg, #ff7130, #ff3c68, #872b97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.nav ul {
+    margin: 0 !important;
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 30px 16px 30px;
+    display: flex;
+    align-content: center;
+    transition: 0.2s;
+    list-style: none;
+}
+
+.nav a:hover {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #171721;
+    color: azure;
+    padding: 40px 120px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer .foot {
+    font-size: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ff7130;
+}
+
+.footer a:hover {
+    color: azure;
+}
+
+/* Main Page */
+.main {
+    padding: 100px 150px;
+    color: azure;
+    height: auto;
+}
+
+.main_content {
+    margin: 40px 80px 100px 80px;
+}
+
+.main h1 {
+    padding-bottom: 20px;
+}
+
+/* Event Page */
+.summary {
+    background-image: url(./Assets/bg2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary h1, .carousel h1, .timeline h1, .register h1 {
+    text-align: center;
+    color: azure;
+}
+
+.summary h1, .timeline h1 {
+    margin-bottom: 20px;
+}
+
+.summary .activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 15%;
+    align-content: center;
+}
+
+.activity img {
+    height: 150px;
+}
+
+.activity p {
+    font-size: 20px;
+    width: auto;
+    max-width: 85%;
+    text-align: left;
+    color: #cecece;
+    padding-top: 10px;
+}
+
+.carousel {
+    background-image:linear-gradient(to right, black, #171721, black);
+    padding: 50px;
+    color: #cecece;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.timeline {
+    padding: 80px 50px;
+    background-image: url(./Assets/bg3.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.session {
+    margin: 10px;
+    padding: 0 50px 5px 20px;
+    border-radius: 10%;
+}
+
+.session h3{
+    font-weight: 800;
+}
+
+.session h4 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.session p {
+    font-size: 12px;
+}
+
+.register {
+    padding: 50px;
+    background-color: #171721;
+}
+
+.register h1 {
+    color: azure;
+}
+
+.register .form {
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register label {
+    font-size: 17px;
+    color: azure;
+}
+ 
+.register input, .register select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.register button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #872b97;
+    border-style: none;
+    background-color: #872b97;
+    color: #cecece;
+    width: 250px;
+    height: 40px;
+    font-weight: 800;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.register button:hover {
+    border: none;
+    background-color: #cecece;
+    color: #872b97;
+}
+
+.special {
+    background-image: linear-gradient(120deg, #ff7130, #ff3c68, #872b97)
+}
+
+.special a {
+    text-decoration: none;
+    color: #872b97;
+}
+
+.special a:hover {
+    color: azure;
+    text-decoration: none !important;
+}
+
+/* Contact Page */
+.contact_us {
+    padding: 100px;
+    padding-top: 150px;
+    color: azure;
+    height: 500px;
+}
+
+.contact_us h1 {
+    margin-bottom: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.CP {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.CP h4 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.CP .info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.CP img {
+    height: 20px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    p {
+        font-size: 13px;
+    }
+    
+    .nav {
+        height: 50px;
+    }
+
+    .main {
+        padding: 80px 140px;
+        padding-top: 50px;
+    }
+
+    .main_content {
+        margin: 30px 0 100px 0;
+    }
+
+    .footer{
+        padding: 40px 100px;
+    }
+    
+    .footer .foot {
+        font-size: 16px;
+    }
+    
+    .summary {
+        padding: 35px;
+    }
+
+    .summary h1, .carousel h1, .timeline h1, .register h1 {
+        font-size: 30px;
+    }
+
+    .activity p {
+        font-size: 14px;
+    }
+    
+    .carousel {
+        padding: 40px 15px;
+    }
+    
+    .register button {
+        width: 200px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .contact_us {
+        padding: 80px 100px 100px 100px
+    }
+
+    .CP {
+        margin: 5px 10px 5px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 11px;
+    }
+    
+    .nav {
+        height: 40px;
+    }
+
+    .nav ul {
+        font-size: 14px;
+    }
+
+    .nav a {
+        margin: 10px 15px 12px 15px;
+    }
+
+    .main {
+        padding: 80px 60px;
+        padding-top: 40px;
+    }
+
+    .footer{
+        padding: 20px 60px;
+    }
+    
+    .footer .foot {
+        font-size: 16px;
+    }
+    
+    .summary {
+        padding: 20px 12px;
+    }
+
+    .summary h1, .carousel h1, .timeline h1, .register h1 {
+        font-size: 24px;
+    }
+
+    .activity img {
+        height: 100px;
+    }
+
+    .activity p {
+        font-size: 10px;
+        padding-top: 7px;
+    }
+    
+    .carousel {
+        padding: 20px 0;
+    }
+
+    .session {
+        margin: 10px;
+        padding: 0 35px 5px 15px;
+        border-radius: 10%;
+    }
+    
+    .session h3{
+        font-size: 18px;
+    }
+    
+    .session h4 {
+        font-size: 12px;
+    }
+    
+    .session p {
+        font-size: 10px;
+    }
+    
+    .register .form {
+        padding: 2% 15%;
+    }
+
+    .register label {
+        font-size: 14px;
+    }
+     
+    .register input, .register select {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 13px;
+    }
+
+    .register button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .contact_us h1 {
+        font-size: 25px;
+    }
+
+    .contact_us {
+        padding: 50px 40px 60px 60px
+    }
+
+    .CP {
+        margin: 5px 10px 5px 0;
+    }
+
+    .CP h4 {
+        font-size: 17px;
+    }
+
+    .CP img {
+        height: 15px;
+    }
+
+    .CP p {
+        font-size: 12px;
+    }
+}
